@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config xmlns:tools="http://schemas.android.com/tools">
+    <domain-config cleartextTrafficPermitted="false">
+        <!-- Replace "example.com" with your domain -->
+        <domain includeSubdomains="true">api.jikan.moe/</domain>
+        <pin-set>
+            <!-- Add your public key hash in base64 format -->
+            <!-- <pin algorithm="sha256">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX=</pin>-->
+            <!-- Optional: Add backup public key for key rotation -->
+            <pin digest="SHA-256">B83dJSU7Dzztwy+HvAHF/ekUhSt+8a3u9GW+2TpRh/0=</pin>
+        </pin-set>
+    </domain-config>
+</network-security-config>
